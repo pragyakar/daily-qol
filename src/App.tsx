@@ -1,18 +1,13 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import Login from "./pages/Login";
-import Landing from "./pages/Landing";
+import Router from "./Router";
 
 const App = () => {
   return (
     <div className="App">
-      <p>Daily QOL</p>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
+        <p>Daily QOL</p>
+        <Router />
       </BrowserRouter>
     </div>
   );
